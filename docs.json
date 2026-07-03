@@ -135,5 +135,10 @@
   },
   "appearance": {
     "default": "dark"
+  },
+  "integrations": {
+    "gtm": {
+      "tagId": "GTM-KFG7ZK6R"
+    }
   }
 }
