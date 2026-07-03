@@ -1,0 +1,139 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "The Double AI",
+  "theme": "almond",
+  "logo": {
+    "light": "https://media.brand.dev/86091eec-4219-4e51-8f12-a6aebd7e218f.svg",
+    "dark": "https://media.brand.dev/86091eec-4219-4e51-8f12-a6aebd7e218f.svg"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#1c1c1c",
+    "light": "#8c8c8c",
+    "dark": "#cccccd"
+  },
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Get Started Free",
+      "href": "https://thedouble.ai/auth/signup"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "what-is-ai-double"
+            ]
+          },
+          {
+            "group": "Building Your Double",
+            "pages": [
+              "sign-up",
+              "setting-up-your-first-double",
+              "a-real-person-vs-an-ai-employee",
+              "agent-page-vs-card-page",
+              {
+                "group": "Customization",
+                "pages": [
+                  "double-builder",
+                  "customization"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Knowledgebase & Training",
+            "pages": [
+              "overview",
+              "global-knowledge-base",
+              "managing-knowledge-sources",
+              "adding-custom-text",
+              "adding-websites",
+              "connecting-x-twitter",
+              "connecting-linkedin",
+              "connecting-you-tube",
+              "context-instructions",
+              "does-social-media-auto-update",
+              "what-are-the-file-size-and-storage-limits",
+              "conflicting-information"
+            ]
+          },
+          {
+            "group": "Voice",
+            "pages": [
+              "voice-overview",
+              "cloning-your-voice",
+              "choosing-a-preset-voice",
+              "supported-audio-formats",
+              "voce-quality-and-troubleshooting",
+              "mic-permissions-and-auto-closing-widget"
+            ]
+          },
+          {
+            "group": "Persona",
+            "pages": [
+              "overview-1"
+            ]
+          },
+          {
+            "group": "Actions",
+            "pages": [
+              "actions-overview",
+              {
+                "group": "Skills",
+                "pages": [
+                  "skills-overview",
+                  "native-skills",
+                  "app-skills"
+                ]
+              },
+              {
+                "group": "Workflow",
+                "pages": [
+                  "workflow"
+                ]
+              },
+              {
+                "group": "Presentations",
+                "pages": [
+                  "presentation-overview",
+                  "creating-presentation",
+                  "presentation-flow",
+                  "using-presentations-in-chat",
+                  "embedding-presentations-on-your-website",
+                  "managing-presentations",
+                  "best-practices",
+                  "advanced-custom-scripts",
+                  "toubleshooting"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Teams",
+            "pages": [],
+            "hidden": true
+          },
+          {
+            "group": "Account & Billing",
+            "pages": [],
+            "hidden": true
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "socials": {
+      "website": "https://thedouble.ai"
+    }
+  },
+  "appearance": {
+    "default": "dark"
+  }
+}
