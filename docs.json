@@ -4,7 +4,7 @@
   "theme": "almond",
   "logo": {
     "light": "https://media.brand.dev/86091eec-4219-4e51-8f12-a6aebd7e218f.svg",
-    "dark": "https://media.brand.dev/86091eec-4219-4e51-8f12-a6aebd7e218f.svg"
+    "dark": "/images/DoublelogowhiteVector.png"
   },
   "favicon": "/favicon.svg",
   "colors": {
