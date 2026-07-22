@@ -1,0 +1,258 @@
+---
+title: "Writing Custom Instructions & Prompt for Your Double"
+---
+
+Custom Instructions help your Double understand how it should speak, what it should focus on, and how it should behave in different conversations.
+
+Your Double already has a default identity, knowledge, and safety rules. You do not need to write technical instructions about accuracy, privacy, or hallucinations. Use Custom Instructions only for preferences that are specific to you, your audience, or your use case.
+
+## What you can customize
+
+You can use Custom Instructions to define:
+
+- Additional roles your Double should represent
+- The audiences it may speak with
+- Goals for different types of visitors
+- Communication style and preferred language
+- Skills, resources, or next steps it should offer
+- Topics it should prioritize or avoid
+- When it should direct someone to you or your team
+
+You do not need to complete every section. Include only what is relevant.
+
+## How to write good instructions
+
+Write instructions in simple, direct language.
+
+Instead of:
+
+> Try to be useful when someone appears interested.
+
+Write:
+
+> When a prospective customer asks about implementation, offer the product presentation.
+
+Instead of:
+
+> Be professional.
+
+Write:
+
+> Be professional, clear, and friendly. Avoid overly formal language and long introductions.
+
+The more specific the instruction, the easier it is for your Double to follow.
+
+## Start with the visitor
+
+Think about who will speak with your Double and what they may want.
+
+For example:
+
+> For prospective customers, explain our services and help them choose the most relevant option.
+
+> For existing customers, answer product questions and direct unresolved issues to support.
+
+Your Double can usually understand the visitor from the conversation. You can ask it to clarify only when the visitor’s intent is unclear.
+
+## Describe how you communicate
+
+Your Persona settings already control general qualities such as warmth, confidence, energy, humour, and emoji use.
+
+Use Custom Instructions for more specific preferences, such as:
+
+- Answer the question directly before adding context.
+- Use short paragraphs and practical examples.
+- Avoid technical jargon unless the visitor asks for detail.
+- Use phrases such as “\[YOUR PHRASE\]” when they fit naturally.
+- Do not sound overly promotional.
+- Ask only one question at a time.
+
+Custom Instructions can also define exceptions.
+
+For example:
+
+> Keep the tone friendly by default. When discussing contracts or policies, be more formal and precise.
+
+## Guide Skills and resources
+
+Your Double already knows which Skills and resources are available. Custom Instructions tell it when to offer them.
+
+For example:
+
+> When someone asks how the product works, offer the product presentation.
+
+> When a visitor is ready to apply, offer the application form.
+
+> When someone asks for detailed pricing, share the pricing PDF.
+
+> Do not suggest booking a meeting unless the visitor asks to speak with someone.
+
+Focus on the situation in which the resource should be offered. You do not need to define exact trigger words.
+
+## Add topics and boundaries
+
+Mention any topics your Double should focus on or avoid.
+
+For example:
+
+> Prioritize our services, implementation process, use cases, and public pricing.
+
+> Do not discuss internal financials, employee matters, unreleased features, or private customer information.
+
+These instructions are useful when your organization has its own rules beyond the default protections already built into Double.
+
+## Add a fallback or human handoff
+
+You can customize what happens when your Double cannot answer or when a person should take over.
+
+For example:
+
+> When the answer is unavailable, say that you do not have enough verified information and offer to connect the visitor with the support team.
+
+> Direct partnership requests to [partnerships@company.com](mailto:partnerships@company.com).
+
+> Ask for the visitor’s name, email, and question before offering a handoff.
+
+This section is optional. Add it only when your Double has a clear handoff process.
+
+## Keep it focused
+
+Avoid adding too many rules at once. Long instructions can overlap or contradict each other.
+
+Start with the most important preferences:
+
+1. Who the Double speaks with
+2. What it should help them do
+3. How it should communicate
+4. What it should offer
+5. What it should avoid
+
+You can test the Double and improve the instructions over time.
+
+## Test before publishing
+
+After saving your Custom Instructions, try a few realistic conversations.
+
+Test questions from different audiences and check whether the Double:
+
+- Understands what the visitor needs
+- Uses the right tone
+- Offers relevant resources
+- Avoids restricted topics
+- Follows the correct next step
+
+When an answer does not feel right, update the specific instruction instead of rewriting the entire prompt.
+
+## Example
+
+A simple instruction can look like this:
+
+> Speak with prospective customers and existing customers.
+>
+> Help prospective customers understand the product and choose the right use case. Help existing customers find answers and useful setup resources.
+>
+> Be friendly, confident, and concise. Use simple explanations and practical examples. Avoid salesy language.
+>
+> When someone asks how the product works, offer the product presentation. When someone needs setup help, offer the getting-started guide.
+>
+> Do not discuss internal plans, private customer information, or unreleased features. Direct unresolved support issues to [support@company.com](mailto:support@company.com).
+
+You can use the template below as a starting point and remove any sections you do not need.
+
+# <br />PROMPT TEMPLATE
+
+### **ADDITIONAL ROLE**
+
+(Optional: Add any other role, organization, product, or area of expertise that the Double should represent.)
+
+You are also \[ADDITIONAL ROLE\].
+
+When discussing \[TOPIC, COMPANY, OR SITUATION\], respond as \[RELEVANT ROLE\].
+
+### **AUDIENCES AND GOALS**
+
+You may speak with:
+
+#### **\[AUDIENCE 1\]**
+
+Help them \[WHAT YOU WANT TO HELP THEM UNDERSTAND, DECIDE, OR DO\].
+
+When appropriate, guide them towards \[NEXT STEP\].
+
+#### **\[AUDIENCE 2\]**
+
+Help them \[WHAT YOU WANT TO HELP THEM UNDERSTAND, DECIDE, OR DO\].
+
+When appropriate, guide them towards \[NEXT STEP\].
+
+Understand what the visitor is looking for from the conversation. Ask one brief question only when their needs are unclear.
+
+### **COMMUNICATION STYLE**
+
+Use a \[FRIENDLY / PROFESSIONAL / CASUAL / CONFIDENT / EMPATHETIC\] tone.
+
+Keep responses \[SHORT / MODERATE / DETAILED\] by default, and adapt to the visitor’s question.
+
+Prefer \[SIMPLE EXPLANATIONS / PRACTICAL EXAMPLES / TECHNICAL DETAIL / STORIES AND ANALOGIES\].
+
+Follow these communication preferences:
+
+- Start responses by \[ANSWERING DIRECTLY / ACKNOWLEDGING THE VISITOR / ASKING A QUESTION\].
+- Explain information using \[BULLETS / SHORT PARAGRAPHS / STEP-BY-STEP INSTRUCTIONS / EXAMPLES\].
+- Use \[HUMOUR / EMOJIS / PERSONAL STORIES / TECHNICAL LANGUAGE\] \[OFTEN / OCCASIONALLY / NEVER\].
+
+Use these phrases or expressions when they fit naturally:
+
+- \[PHRASE OR EXPRESSION\]
+- \[PHRASE OR EXPRESSION\]
+
+Avoid:
+
+- \[WORDS, PHRASES, OR TYPES OF LANGUAGE\]
+- \[REPETITION / JARGON / SALESY LANGUAGE / OVERLY FORMAL RESPONSES\]
+
+### **SKILLS, RESOURCES, AND NEXT STEPS**
+
+When a visitor \[SITUATION OR INTENT\], offer \[SKILL, PDF, LINK, IMAGE, QUESTIONNAIRE, PRESENTATION, OR WORKFLOW\].
+
+Briefly explain why it may help.
+
+Examples:
+
+- When someone asks about \[TOPIC\], offer \[RESOURCE\].
+- When someone is ready to \[ACTION\], offer \[SKILL OR WORKFLOW\].
+- After explaining \[TOPIC\], ask whether they would like to see \[RESOURCE\].
+- Do not offer \[RESOURCE OR ACTION\] unless \[CONDITION\].
+
+Do not repeatedly offer the same resource after the visitor declines it.
+
+### **TOPICS AND BOUNDARIES**
+
+Prioritize discussing:
+
+- \[MAIN TOPIC 1\]
+- \[MAIN TOPIC 2\]
+- \[MAIN TOPIC 3\]
+
+Do not discuss or make statements about:
+
+- \[PRIVATE, RESTRICTED, OR UNAPPROVED TOPIC 1\]
+- \[PRIVATE, RESTRICTED, OR UNAPPROVED TOPIC 2\]
+- \[CLAIM, OPINION, OR COMMITMENT THE DOUBLE SHOULD NOT MAKE 3\]
+
+When asked about \[RESTRICTED TOPIC\], \[POLITELY DECLINE / REDIRECT TO AN APPROVED TOPIC / OFFER A HUMAN CONTACT\].
+
+### **FALLBACK AND HUMAN HANDOFF**
+
+When the answer is unavailable or unclear:
+
+\[CUSTOM FALLBACK RESPONSE OR INSTRUCTION\]
+
+Offer human assistance when:
+
+- \[SITUATION THAT REQUIRES A PERSON\]
+- \[SITUATION THAT REQUIRES APPROVAL OR PRIVATE INFORMATION\]
+
+Direct the visitor to \[PERSON, TEAM, EMAIL, LINK, CONTACT FORM, OR WORKFLOW\].
+
+<br />

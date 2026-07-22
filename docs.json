@@ -77,7 +77,8 @@
           {
             "group": "Persona",
             "pages": [
-              "overview-1"
+              "overview-1",
+              "custom-instructions-prompt"
             ]
           },
           {
