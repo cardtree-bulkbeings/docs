@@ -40,8 +40,8 @@
               {
                 "group": "Customization",
                 "pages": [
-                  "double-builder",
-                  "customization"
+                  "customization/double-builder",
+                  "customization/appearance-skins-brand-customization"
                 ]
               }
             ]
@@ -49,36 +49,36 @@
           {
             "group": "Knowledgebase & Training",
             "pages": [
-              "overview",
-              "global-knowledge-base",
-              "managing-knowledge-sources",
-              "adding-custom-text",
-              "adding-websites",
-              "connecting-x-twitter",
-              "connecting-linkedin",
-              "connecting-you-tube",
-              "context-instructions",
-              "does-social-media-auto-update",
-              "what-are-the-file-size-and-storage-limits",
-              "conflicting-information"
+              "knowledge-base-and-training-overview",
+              "Knowledge-base-and-training/global-knowledge-base",
+              "Knowledge-base-and-training/managing-knowledge-sources",
+              "Knowledge-base-and-training/adding-custom-text",
+              "Knowledge-base-and-training/adding-websites",
+              "Knowledge-base-and-training/connecting-x-or-twitter",
+              "Knowledge-base-and-training/connecting-linkedin",
+              "Knowledge-base-and-training/connecting-youtube",
+              "Knowledge-base-and-training/context-instructions",
+              "Knowledge-base-and-training/does-social-media-auto-update",
+              "Knowledge-base-and-training/file-size-and-storage-limits",
+              "Knowledge-base-and-training/conflicting-information"
             ]
           },
           {
             "group": "Voice",
             "pages": [
-              "voice-overview",
-              "cloning-your-voice",
-              "choosing-a-preset-voice",
-              "supported-audio-formats",
-              "voce-quality-and-troubleshooting",
-              "mic-permissions-and-auto-closing-widget"
+              "voice/voice-overview",
+              "voice/cloning-your-voice",
+              "voice/choosing-a-preset-voice",
+              "voice/supported-audio-formats",
+              "voice/voce-quality-and-troubleshooting",
+              "voice/mic-permissions-and-auto-closing-widget"
             ]
           },
           {
             "group": "Persona",
             "pages": [
-              "overview-1",
-              "custom-instructions-prompt"
+              "persona",
+              "persona/custom-instructions-prompt"
             ]
           },
           {
@@ -88,29 +88,29 @@
               {
                 "group": "Skills",
                 "pages": [
-                  "skills-overview",
-                  "native-skills",
-                  "app-skills"
+                  "actions/skills/skills-overview",
+                  "actions/skills/native-skills",
+                  "actions/skills/app-skills"
                 ]
               },
               {
                 "group": "Workflow",
                 "pages": [
-                  "workflow"
+                  "actions/workflow"
                 ]
               },
               {
                 "group": "Presentations",
                 "pages": [
-                  "presentation-overview",
-                  "creating-presentation",
-                  "presentation-flow",
-                  "using-presentations-in-chat",
-                  "embedding-presentations-on-your-website",
-                  "managing-presentations",
-                  "best-practices",
-                  "advanced-custom-scripts",
-                  "toubleshooting"
+                  "actions/presentation-overview",
+                  "actions/presentations/creating-presentation",
+                  "actions/presentations/presentation-flow",
+                  "actions/presentations/using-presentations-in-chat",
+                  "actions/presentations/embedding-presentations-on-your-website",
+                  "actions/presentations/managing-presentations",
+                  "actions/presentations/best-practices",
+                  "actions/presentations/advanced-custom-scripts",
+                  "actions/presentations/toubleshooting"
                 ]
               }
             ]
