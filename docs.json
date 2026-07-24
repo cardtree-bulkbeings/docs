@@ -9,14 +9,14 @@
   "favicon": "/favicon.svg",
   "colors": {
     "primary": "#1c1c1c",
-    "light": "#8c8c8c",
-    "dark": "#cccccd"
+    "light": "#4342ff",
+    "dark": "#4342ff"
   },
   "navbar": {
     "primary": {
       "type": "button",
-      "label": "Get Started Free",
-      "href": "https://thedouble.ai/auth/signup"
+      "label": "Dashboard",
+      "href": "https://thedouble.ai/app/home"
     }
   },
   "navigation": {
