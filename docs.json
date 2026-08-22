@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "name": "The Double AI",
-  "theme": "almond",
+  "theme": "willow",
   "logo": {
     "light": "https://media.brand.dev/86091eec-4219-4e51-8f12-a6aebd7e218f.svg",
     "dark": "/images/DoublelogowhiteVector.png"
@@ -135,7 +135,8 @@
     }
   },
   "appearance": {
-    "default": "dark"
+    "default": "system",
+    "strict": false
   },
   "integrations": {
     "gtm": {
