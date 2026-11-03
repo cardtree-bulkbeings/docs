@@ -43,7 +43,8 @@
                   "customization/double-builder",
                   "customization/appearance-skins-brand-customization"
                 ]
-              }
+              },
+              "double-page"
             ]
           },
           {
@@ -78,7 +79,9 @@
             "group": "Persona",
             "pages": [
               "persona",
-              "persona/custom-instructions-prompt"
+              "persona/custom-instructions-prompt",
+              "identity",
+              "persona-overview"
             ]
           },
           {
@@ -90,7 +93,8 @@
                 "pages": [
                   "actions/skills/skills-overview",
                   "actions/skills/native-skills",
-                  "actions/skills/app-skills"
+                  "actions/skills/app-skills",
+                  "skills-sharing-assets-and-ai-skills"
                 ]
               },
               {
@@ -122,8 +126,22 @@
           },
           {
             "group": "Account & Billing",
-            "pages": [],
+            "pages": [
+              "untitled-page-2"
+            ],
             "hidden": true
+          },
+          {
+            "group": "Channels",
+            "pages": [
+              "gmail-drafts"
+            ]
+          },
+          {
+            "group": "Double Phone",
+            "pages": [
+              "double-phone-app"
+            ]
           }
         ]
       }

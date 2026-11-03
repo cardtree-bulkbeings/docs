@@ -1,0 +1,170 @@
+---
+title: "Gmail Drafts"
+---
+
+Gmail Drafts is how your Double helps you stay on top of email without ever sending on your behalf. It reads incoming mail through the **Gmail channel**, prepares a reply in your voice, and leaves it for you to review, edit, and send — a **review-only draft**.
+
+Nothing is emailed automatically. The only way mail leaves your account is when you press **Send** and confirm.
+
+Go to **Double → Channels → Gmail** and open the **Drafts by Double** tab.
+
+**What you can do**
+
+- Get a draft prepared automatically for eligible new mail
+- Ask Double for a draft on any email in the inbox
+- Review, edit, shorten, or regenerate a draft
+- Change the writing style, or describe the change you want in plain words
+- Use CRM context to personalise replies
+- Send with an explicit confirmation step
+- Filter drafts that need an urgent response
+
+## **How drafts work**
+
+A draft is created inside Double and stored privately for that Double. It does **not** appear in Gmail's own Drafts folder, and it is never sent by Double.
+
+When you press **Send**, Double replies inside the original Gmail thread, from the connected Gmail account — so the conversation stays threaded exactly as if you had replied from Gmail.
+
+**Tip:** Treat every draft as a first pass. The fastest workflow is: open the draft, skim it, then either send it, edit it, or ask for a change ("make it warmer", "mention Tuesday").
+
+## **When Double prepares a draft**
+
+With automatic drafts turned on, Double prepares a draft for eligible mail on each sync:
+
+| Gets a draft | Does not get a draft |
+| --- | --- |
+| New **unread** email in **Primary** | Notifications and Marketing categories |
+| The **latest message** in a thread | Already-read mail |
+| Mail from senders and keywords you allow | Blocked senders and keywords |
+| Mail without security-sensitive content | OTP, verification, password-reset, and banking emails (always skipped) |
+
+Other rules:
+
+- **One draft per source email.** If a draft already exists for a message, Double does not create a second one.
+- **Up to 50 threads per sync** are prepared, urgent and important replies first.
+- Drafts are only prepared for emails that pass your privacy filters.
+
+Don't want to wait for the next sync? Open any email and choose **Create draft with Double**.
+
+## **Turning automatic drafts on or off**
+
+Open the Gmail channel, then **Settings → Filter**.
+
+- **Automatically create drafts** (on by default) — prepares review-only drafts for eligible new unread Primary emails.
+- **Sync Primary inbox only** — fetch only what Gmail classifies as Primary. Marketing and Notifications will not be fetched on future syncs.
+- **Use CRM contact context** — tailor drafts with a matched sender's name, company, role, industry, and tags. Internal notes, phone numbers, and raw CRM records are never included.
+- **Use Zoho CRM contact context** — prefer an exact sender-email match in the selected Zoho account. Contacts are checked before Leads; Double CRM remains the fallback.
+- **Fetch new mail automatically** — choose the interval (minimum 5 minutes, up to 24 hours). A longer interval reduces provider requests and credit usage.
+
+**Initial sync** fetches up to 30 recent emails by default (maximum 50). Changing filters does not remove emails that were already synced.
+
+## **The Drafts by Double tab**
+
+The Gmail channel has three tabs — **Inbox**, **Drafts by Double**, and **Sent** — with a count on each.
+
+In **Drafts by Double** you see every draft waiting for review, with:
+
+- **Recipient and subject** — a preview line from the draft body
+- **Priority label** — **Urgent**, **Due soon**, or **Important**, with a deadline where one was detected (Today, Tomorrow, or a date)
+- **Status** — usually **Ready to send**
+- **Attachment icon** — when the original email had attachments
+- **Age** — how long the draft has been waiting
+
+Use the **Respond urgently** filter to show only urgent drafts, sorted by deadline. In the **Inbox** tab, any thread that has a draft waiting is labelled **Draft ready**.
+
+## **Reviewing a draft**
+
+Click a draft to open it. The top half shows the **original email**, including its attachments. Below it, **Double's Draft Reply** shows the from/subject fields and the prepared body.
+
+If CRM context was used, a small badge tells you which source was applied — **Double CRM context applied**, **Zoho Contact context applied**, or **Zoho Lead context applied**.
+
+From here you can:
+
+| Action | What it does |
+| --- | --- |
+| **Send** | Opens the confirmation dialog before anything is sent |
+| **Edit draft** | Opens the full editor |
+| **Shorter** | Rewrites the draft more briefly, keeping the meaning |
+| **Regenerate** | Writes a fresh alternative, not just a reworded version |
+| **Open in Gmail** | Opens the original thread in Gmail |
+| **Create draft with Double** | Appears when an email has no draft yet |
+
+## **Editing a draft**
+
+The editor gives you a rich-text toolbar — font family, size, bold, italic, and underline — plus a live character count.
+
+Three ways to change the wording:
+
+- **Writing style menu** — switch between **Double style** (uses the Double's configured persona) and the presets **Formal**, **Friendly**, **Concise**, **Assertive**, or **Empathetic**.
+- **Describe your change** — type an instruction such as "Add that I'll send the deck on Friday" or "Tone down the apology" (up to 1,000 characters) and press **Apply**.
+- **Shorter / Regenerate** — quick one-click adjustments.
+
+Then choose **Save draft** to keep your edits (the draft becomes **Edited**), or **Send** to move to confirmation.
+
+**Tip:** Double applies the style you pick to the draft you're editing. Changing the default in **Settings → Style** affects future drafts instead.
+
+## **Writing style**
+
+Open **Settings → Style** to set the default style for new drafts. **Double style** keeps the tone and personality configured in Persona; the five presets override tone, formality, brevity, humour, slang, and emoji for email only.
+
+The **Custom** tab holds extra Gmail-only instructions, e.g. "Always offer two meeting times" or "Never include pricing — say I'll follow up". These affect drafts only and cannot override identity, knowledge, privacy, or safety rules.
+
+## **Sending a draft**
+
+1. Press **Send** on the draft (or in the editor).
+2. Check the confirmation dialog — it shows **To**, **Subject**, and the full draft body.
+3. Press **Cancel** to go back, or **Send email** to send.
+
+A few details worth knowing:
+
+- The confirmation is time-limited — it expires **10 minutes** after you request it. If it expires, press **Send** again to get a fresh confirmation.
+- Double replies **in the original Gmail thread** and keeps Gmail's thread subject, even if the subject shown in Double was edited.
+- The draft is signed with the **connected Gmail account's name** — never the Double's name or a name taken from the incoming email.
+- If the Gmail connection is inactive or reply-sending is not configured, Double stops and asks you to fix the connection instead of sending.
+- Once sent, the draft moves to the **Sent** tab and the thread shows as handled.
+
+## **Privacy & filters**
+
+**Settings → Filter** controls exactly which mail Double looks at.
+
+- **Included senders** and **included keywords** narrow analysis to specific people or topics.
+- **Blocked senders** and **blocked keywords** exclude them.
+- Security-sensitive mail — one-time passwords, verification and login codes, password resets, account recovery, private keys, and card details — is **always skipped**. No draft is prepared and the content is not used.
+- The screen notes plainly: _OTP, personal banking, and verification emails will be completely skipped. No drafts prepared._
+
+CRM context is opt-in. When enabled, only the matched contact's name, company, role, industry, and tags are used — never internal notes, phone numbers, or raw CRM records.
+
+## **Draft statuses**
+
+| Status | Meaning |
+| --- | --- |
+| **Ready to send** | Generated and waiting for your review |
+| **Edited** | You changed and saved it |
+| **Sending** | Confirmed, currently being delivered |
+| **Sent** | Delivered to Gmail |
+| **Failed** | Generation or delivery failed; try again |
+| **Send unknown** | Delivery could not be confirmed — check Gmail before retrying |
+
+## **Credits and limits**
+
+- Each draft generation and each rewrite uses **Double AI Credits**, billed at the moment Double calls the model.
+- Automatic drafts are capped at **50 threads per sync**, so a large backlog won't produce an unlimited batch in one go.
+- Draft activity is briefly rate-limited to protect your account — very rapid generate/rewrite/send cycles may pause for a few minutes.
+- Drafts are private to the Double and Gmail account that created them.
+
+## **FAQ**
+
+**Does Double ever send an email without me?** No. Drafts are review-only. Sending always needs your explicit confirmation.
+
+**Why didn't I get a draft for an email?** Common reasons: it's in Notifications or Marketing, it was already read, the sender or a keyword is blocked, it looks like an OTP or banking email, a draft already exists for that message, or automatic drafts are off.
+
+**Where do drafts live — Double or Gmail?** In Double. They are not written to Gmail's Drafts folder. Gmail only sees the message once you send it.
+
+**Can I change the recipient?** No. Drafts reply to the original sender, in the original thread, so replies can't be sent to the wrong person.
+
+**Why does the sent subject differ from the one I edited?** Gmail keeps the thread's original subject when replying. The subject in Double is for your review.
+
+**Can I use a different style for one draft without changing my default?** Yes. Use the **Writing style** menu inside the draft editor — it applies to that draft only.
+
+**What happens to attachments on the original email?** They stay visible with the original message and are read as context when Double prepares the draft. Replies are sent as text in the thread.
+
+**My draft vanished — what happened?** It was either sent (check the **Sent** tab), discarded, or belongs to a different Gmail account or Double. Use the account switcher at the top of the Gmail channel to check.
