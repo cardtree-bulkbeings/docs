@@ -37,6 +37,7 @@
               "setting-up-your-first-double",
               "a-real-person-vs-an-ai-employee",
               "agent-page-vs-card-page",
+              "card-page",
               {
                 "group": "Customization",
                 "pages": [
@@ -45,6 +46,23 @@
                 ]
               },
               "double-page"
+            ]
+          },
+          {
+            "group": "Assist (Command)",
+            "pages": [
+              "command/assist-overview",
+              "command/routines",
+              "command/needs-you-and-activity"
+            ]
+          },
+          {
+            "group": "Earnings",
+            "pages": [
+              "earnings/earnings-overview",
+              "earnings/setting-up-payouts",
+              "earnings/pricing-and-packages",
+              "earnings/earnings-and-payment-history"
             ]
           },
           {
@@ -99,9 +117,20 @@
                 "group": "Skills",
                 "pages": [
                   "actions/skills/skills-overview",
+                  "actions/skills/creating-a-skill",
+                  "actions/skills/roleplay",
+                  "actions/skills/interview",
+                  "actions/skills/skill-results-and-testing",
                   "actions/skills/native-skills",
                   "actions/skills/app-skills",
                   "skills-sharing-assets-and-ai-skills"
+                ]
+              },
+              {
+                "group": "Tools",
+                "pages": [
+                  "actions/tools/tools-overview",
+                  "actions/tools/action-permissions"
                 ]
               },
               {

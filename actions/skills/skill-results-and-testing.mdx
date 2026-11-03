@@ -1,0 +1,120 @@
+---
+title: "Results and Testing"
+---
+
+Once a skill is saved, two more tabs appear: **Results**, where you see what happened when people used it, and **Test**, where you try it yourself exactly as a visitor would.
+
+**Where to find it:** open **Library → Skills** (or a Double's Skills), then open a saved skill.
+
+**Note:** Both tabs stay disabled until the skill has been saved. The tooltip says **"Create the skill first"**. Custom skills show **"Available when custom skills launch"**.
+
+## Testing a skill
+
+1. Open a saved skill.
+2. Click **Test**.
+3. Click **Start test session**.
+4. Reply as a visitor would.
+5. Review the outcome in **Results**.
+
+### Role play test
+
+A role play test starts a **real session**:
+
+> A real session. It shows up in Results like any other.
+
+- The Double opens in character and responds turn by turn.
+- **Restart** starts over.
+- **Session ended** appears when the configured end condition is reached.
+- The session, transcript, and score are recorded like any visitor session.
+
+### Interview test
+
+An interview test is an interactive walk-through:
+
+> An interactive walk-through. Completed responses are saved to Results.
+
+- Questions are asked one at a time.
+- Required questions must be answered.
+- Choice questions show selectable options.
+- Answers are validated where the question expects an email, phone number, name, address, URL, or date.
+- You can type `skip`, `pass`, or `next` for an optional question.
+- Completing the walk-through saves a test response in **Results**.
+
+## Results
+
+What you see depends on the kind of skill.
+
+### Role play results
+
+Three summary cards:
+
+| Card | What it shows |
+| --- | --- |
+| **Sessions** | Total sessions |
+| **Completed** | Sessions that reached an end condition |
+| **Average score** | Mean overall score, or **—** when no session has feedback |
+
+The **Sessions** table lists:
+
+| Column | What it shows |
+| --- | --- |
+| **Session** | The session title |
+| **Date** | When it ran |
+| **Questions** | How many questions were asked |
+| **Length** | Duration in minutes or seconds |
+| **Score** | Overall score out of 100 |
+| **Status** | Session status |
+
+Empty state: *"No sessions yet. Try it yourself from the Test tab, or share your Double page."*
+
+Sessions are created by visitors and by your own tests. Feedback is owner-only — visitors never see their score during the conversation.
+
+### Interview results
+
+The **Responses** tab lists every completed questionnaire, newest first.
+
+Each response shows:
+
+- When it was completed and its status
+- A **Score: X / Y** pill, or **Unscored (Data Collection)**
+- Every question with the visitor's answer
+- **✓ Correct** or **✗ Incorrect** for scored questions
+- **No answer provided** when a question was skipped
+- **Score / Eval** when the answer was graded
+
+Click **Download Responses** to export a CSV. The file includes:
+
+- Name, email, phone, date, score, and status for each response
+- A question-by-question breakdown with the answer, correct answer, points earned, and maximum points
+
+Empty state: *"No responses recorded yet."*
+
+### Custom skill results
+
+Results for custom skills become available when the new agent runtime launches.
+
+## What to know
+
+- Test sessions are real sessions and appear in Results.
+- Interview test responses are saved the same way as visitor responses.
+- Role play feedback is generated at the end of a session and is visible only to you.
+- The **Average score** uses sessions that have feedback; unscored sessions are not counted.
+- CSV export covers the responses loaded in the view.
+- Results belong to the skill, so unassigning a Double does not delete its history.
+
+## FAQ
+
+**Why can't I open Results or Test?** Save the skill first. Custom skills wait for the new runtime.
+
+**Does a Test session affect my metrics?** Role play tests count as sessions, which is useful for checking the experience. Interview tests add a response.
+
+**Can visitors see their scores?** No. Role play feedback is for the owner. Interview scores appear in your responses view.
+
+**Where is the transcript?** Role play sessions store their transcript and feedback; open the session from its results. Interview answers are listed per response.
+
+**How many responses can I export?** The CSV includes the responses currently loaded in the Results view.
+
+**Next steps:**
+
+- Role Play Skills
+- Interview Skills

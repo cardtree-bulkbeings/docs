@@ -1,0 +1,136 @@
+---
+title: "Action Permissions"
+---
+
+Every tool action has its own rule: **who can use it** and **whether Double asks you first**. This is where you decide what your Double may do on its own, what needs your approval, and what it may do for visitors.
+
+**Where to find it:** **Library → Tools → Manage** on a connected tool, then open **What your Double can do**.
+
+## Two audiences
+
+At the top of the permission panel, switch between:
+
+| View | What it controls |
+| --- | --- |
+| **When you ask** | What your Double may do when you ask it directly |
+| **When a visitor asks** | What your Double may do for people using your public Double |
+
+You can allow an action for yourself but not for visitors — useful for anything that touches internal data.
+
+## Set everything at once
+
+Use **Set all** for a quick starting point:
+
+| Option | Result |
+| --- | --- |
+| **Read only** | Read actions allowed; writes and deletes off |
+| **Read and write** | Reads and writes allowed; destructive actions stay locked |
+| **All available actions** | Every available action allowed |
+| **Custom** | Keep the individual choices you have made |
+
+Then fine-tune individual actions.
+
+## Per-action settings
+
+For each action you can choose:
+
+### Who can use it
+
+| Setting | Meaning |
+| --- | --- |
+| **Nobody** | Blocks the action for everyone |
+| **Only me** | Only you can trigger it |
+| **Me and visitors** | You and public visitors can trigger it |
+
+### Confirmation
+
+| Setting | Meaning |
+| --- | --- |
+| **Ask me first** | Double prepares the action and waits for your approval |
+| **Run without asking** | Double can run it directly |
+
+**Destructive actions** — such as deleting email or cancelling an event — are **Locked** and cannot be enabled from the panel.
+
+## Reading the table
+
+| Column | What it shows |
+| --- | --- |
+| **Action** | The specific operation, such as *Send email* |
+| **Type** | **Read**, **Write**, or **Delete** |
+| **Who can use it** | The audience setting, in the owner view |
+| **Visitor outcome** | What a visitor experiences, in the visitor view |
+| **Confirmation** | Whether the action asks first, in the owner view |
+
+In the visitor view, each action resolves to one of these outcomes:
+
+| Visitor outcome | What happens |
+| --- | --- |
+| **Runs** | Allowed without confirmation |
+| **Asks you first** | The visitor's request waits for your approval |
+| **Not permitted** | Limited to you, so visitors can't use it |
+| **Blocked** | You turned the action off |
+| **Not available** | Destructive or locked until reviewed |
+
+## Bulk editing
+
+For tools with many actions:
+
+- Search for an action by name.
+- Filter by **All**, **Read**, **Write**, or **Delete**.
+- Use **Select all N**, **Select N results**, or **Deselect visible** to apply a change to a group.
+
+Bulk changes still respect locked destructive actions.
+
+## Save
+
+Click **Save permissions**. The panel shows **Saving…** and then **Permissions saved**.
+
+If you switch accounts with unsaved changes, Double asks:
+
+> Switch accounts and discard the unsaved permission changes?
+
+## How the rules combine
+
+- **Tool access** — the tool must be connected and available to that Double.
+- **Action permission** — the action must be allowed for the audience.
+- **Confirmation** — if set to ask first, the run waits for you even when the action is allowed.
+- **Provider permissions** — the connected account's own access still applies.
+
+All four must allow the action for it to run.
+
+## What to know
+
+- Permissions are shared across all accounts connected to the same tool.
+- **Nobody** blocks the action for you and for visitors.
+- **Only me** keeps the action internal to you.
+- **Me and visitors** exposes it to people using your public Double.
+- Destructive actions are locked for safety and cannot be turned on from the permissions panel.
+- Some actions are read-only by design, such as Shopify's product and inventory reads.
+
+## Examples
+
+**Let your Double draft emails but never send them:**
+Set *Send email* to **Only me** with **Ask me first**, and leave visitors at **Not permitted**.
+
+**Let visitors book meetings, but only within your calendar rules:**
+Set *Check availability* to **Me and visitors** with **Run without asking**, and keep *Cancel event* locked.
+
+**Keep CRM writes internal:**
+Set *Create lead* to **Only me** with **Ask me first**; set *Read CRM records* to **Me and visitors**.
+
+## FAQ
+
+**Why is an action greyed out?** It is destructive or locked until reviewed.
+
+**A visitor was asked for approval — what do I do?** Open **Assist → Needs you**, review the request, and approve or cancel it.
+
+**Can I allow an action for visitors but not for myself?** Yes. The two views are independent.
+
+**Do permissions apply to routines too?** Yes. Routines also show their own action permissions, with per-run and daily limits.
+
+**I changed permissions but the Double still can't use the tool.** Check that the Double has access to the tool and that the connected account is healthy.
+
+**Next steps:**
+
+- Tools Overview
+- Skills Overview

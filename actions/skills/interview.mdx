@@ -1,0 +1,146 @@
+---
+title: "Interview Skills"
+---
+
+An interview skill — also called a **Questionnaire** — asks a set of questions one at a time, records the answers, and saves each completed run so you can review or export it. Use it for lead intake, applications, screening, feedback, quizzes, or surveys.
+
+**Where to find it:** **Library → Skills → Interview**, or open a Double → **Configure → Skills**.
+
+## Write your questions
+
+Open the question builder under **What Double collects**.
+
+> Double asks these one at a time, in its own voice.
+
+Click **Add Question** to pick a template or write your own. Each question can be:
+
+| Type | Answer |
+| --- | --- |
+| **Text / Input** | A free-text answer |
+| **Choice (Single)** | One option |
+| **Choice (Multi)** | One or more options |
+| **Date / Time** | A date or time |
+
+Templates cover common fields such as name, email, phone, company, job title, website, availability, budget, and more. You can also search templates or add a custom question.
+
+### Validation
+
+Double detects what a question expects from its wording and validates the answer:
+
+- Email
+- Phone
+- Name
+- Address
+- Website / URL
+- Date / time
+
+A question with validation shows a badge. If an answer doesn't fit, the visitor is asked again with a helpful example.
+
+### Simple or scored
+
+| Mode | What it does |
+| --- | --- |
+| **Simple** | Records the answer; no points |
+| **Scored** | Grades the answer and adds points |
+
+Use **Set all type** to switch every question to **All Simple** or **All Scored** at once.
+
+For scored questions:
+
+- **Choice** — tick the correct option or options.
+- **Free text** — write a **Correct Answer / Guideline** describing what counts as correct, and set **Points** (default 1).
+
+Scoring is covered below.
+
+### Required and Say Exactly
+
+- **Required** — the visitor must answer before moving on.
+- **Say Exactly** — Double uses your text verbatim rather than treating it as guidance.
+
+### Closing reply
+
+Add an optional **Closing Reply** shown after the last question:
+
+> e.g. Perfect, that gives me what I need. What would you like to explore next?
+
+Leave it empty for a natural default. The global **Say Exactly** switch controls whether the closing is delivered word-for-word.
+
+## How visitors experience it
+
+1. The skill is triggered by a start phrase, by Double deciding it fits, or by a workflow.
+2. For a standalone skill, Double asks first — for example, *"I can help with 'Mock interview'. Would you like to start the questionnaire now?"*
+
+3. The visitor answers one question at a time.
+4. Choice questions show selectable options with a **Confirm** button.
+5. Invalid answers are re-asked with a correction hint.
+6. Optional questions can be skipped.
+7. At the end, the visitor sees the closing reply and a completion message.
+
+If the visitor says **cancel**, **stop**, **quit**, **never mind**, or similar, the questionnaire stops.
+
+Interviews work in chat and voice. On voice, questions are spoken and answers are transcribed.
+
+## How scoring works
+
+- Only **scored** questions count towards the total.
+- **Choice questions** are correct when the answer matches or includes a correct option. For multi-choice, any correct option earns full points.
+- **Free-text questions** are correct when the answer matches the guideline exactly, or when Double's grader judges it correct against your guideline.
+- Well-formed names, emails, phone numbers, and addresses are accepted automatically.
+- Optional questions left blank are recorded as skipped and excluded from the total.
+- The result shows **Score: X / Y** and a percentage.
+
+## Results and export
+
+Open the skill's **Results** tab:
+
+> Every completed questionnaire, newest first.
+
+Each response shows the date, status, score, and every question with the visitor's answer. Scored answers are marked **✓ Correct** or **✗ Incorrect**.
+
+Click **Download Responses** to export a CSV with:
+
+- Name, email, phone, date, score, and status
+- A row per question with the answer, correct answer, points earned, and maximum points
+
+## Triggers
+
+- **Also start when someone says** — exact phrases for a guaranteed start.
+- **When should Double use this?** — plain-language guidance for when the skill fits.
+- **Workflow** — a questionnaire can be a step in a workflow, including a chat-start workflow that asks its first question at the start of a conversation.
+
+## Tips
+
+- Keep questions short and concrete.
+- Use choice questions when you need consistent data.
+- Score only the questions that have a clear right answer.
+- Use **Required** for anything you can't process without.
+- Add a closing reply that tells the visitor what happens next.
+- Check the Results tab after a few real conversations and tighten unclear questions.
+
+## What to know
+
+- A questionnaire must have at least one question.
+- Answers are saved to the skill's **Results** tab.
+- A skill needs to be **Active** and assigned to a Double before visitors can use it.
+- Question text determines validation, so rewording a question can change how answers are checked.
+- Scored free-text answers use an AI grader when the answer isn't an exact match; a missing grader configuration means only exact matches count.
+- CSV export includes the responses currently loaded in the view.
+
+## FAQ
+
+**Why didn't the questionnaire start?** Check that the skill is active, assigned, and matched by a start phrase or a clear request. Double may also ask the visitor for consent first.
+
+**Can the visitor skip a question?** Only optional questions. Required questions are asked again.
+
+**Why did the visitor get asked the same question twice?** An answer failed validation — for example, an invalid email address.
+
+**Can I use the same questions in a workflow?** Yes. Questionnaire is available as a workflow step.
+
+**Where do the answers go?** To the skill's Results tab, and to the CSV export.
+
+**Can I change the questions later?** Yes. Changes apply to new responses; existing responses keep the answers they recorded.
+
+**Next steps:**
+
+- Role Play Skills
+- Results and Testing

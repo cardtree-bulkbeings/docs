@@ -1,0 +1,177 @@
+---
+title: "Creating a Skill"
+---
+
+A skill teaches your Double one thing it can do in a conversation — run a practice role play, collect answers to a set of questions, share files, present a deck, or follow your own instructions with tools.
+
+**Where to find it:** **Library → Skills** (`/app/skills`) for skills across all Doubles, or open a Double → **Configure → Skills** to work on that Double's skills.
+
+## Start a skill
+
+The Skills page starts with **Start with a purpose-built skill**:
+
+| Starting point | What it does |
+| --- | --- |
+| **Presentation** | Presents a slide deck and answers questions about it |
+| **Role play** | Lets people practise a conversation with your Double |
+| **Interview** | Asks set questions and collects the answers |
+| **Share assets** | Hands files and links to visitors when they ask |
+| **Build your own** | Describe anything — instructions, a tool call, a workflow |
+
+Click a starting point to choose a template, or pick **More starting points** to see everything.
+
+Templates include **Mock interview**, **Sales call practice**, **Investor pitch practice**, **Lead intake**, **Founder application**, **Customer feedback**, **Qualify leads**, and **Book meetings**. Each opens pre-filled, and you can change every setting.
+
+You can also click **New skill** and describe what you want in Assist; Assist drafts the skill and asks for anything missing.
+
+## The skill editor
+
+The editor has a header, a **Setup** tab, and a right-hand preview. Once a skill is saved, **Results** and **Test** also become available.
+
+### Header
+
+- **Skill name** — click to rename.
+- A kind badge — **Role play**, **Questionnaire**, or **Custom**.
+- A status — **Draft**, **Preview**, **Active**, or **Paused**.
+- **Assign to** — choose one or more Doubles. Inside a Double's Skills page this is fixed to that Double.
+- **Cancel**, and the primary action: **Create skill**, **Save changes**, or **Save preview**.
+
+## Setup tab
+
+### Overview
+
+Every skill asks:
+
+| Field | What to write |
+| --- | --- |
+| **When should Double use this?** | The situation that should trigger the skill, in plain language |
+| **What it does** | A short description of the outcome |
+
+You do not need exact keywords here — Double decides when the skill applies. For a guaranteed start, add exact start phrases under **Settings**.
+
+### Behaviour
+
+What appears here depends on the kind of skill.
+
+**Role play** — choose a scenario, then fill in who your Double plays and the details for that scenario. Set **Difficulty**, choose **Double's own persona** or a **Custom role persona**, edit **Suggested questions**, and add anything else Double should know. See **Role Play Skills**.
+
+**Interview** — write the questions Double asks, set which are scored, mark them required, and add a closing reply. See **Interview Skills**.
+
+**Custom** — write the instructions and choose how closely Double follows them:
+
+| Mode | Meaning |
+| --- | --- |
+| **Adaptive** | Double decides the approach and tools each time |
+| **Guided** | Double stays inside your rules and order |
+
+Custom skills save as a **Preview** first; they start answering visitors when the new agent runtime is available.
+
+### Tools (custom skills)
+
+Pick the tools the skill may use. Each tool shows whether it is connected, whether read access is on, and a link to **Manage tools**.
+
+**Permissions are set once per tool** — the skill only chooses which tools it can reach.
+
+### Reference knowledge (role play)
+
+Add files Double can read during the session, such as a job description or a scoring rubric. Visitors never receive these files.
+
+### Files Double hands over
+
+Choose shareable files that Double can give to the participant when they ask.
+
+- Only items marked **Shareable** in Knowledge can be chosen.
+- Turn on **Also hand these over when the flow ends** to guarantee delivery when the session or survey finishes.
+
+### Settings
+
+The summary line shows the key settings at a glance — for example, *"5 questions · feedback on · 2 start phrases · 5 turns cooldown"*.
+
+**When the session ends** (role play):
+
+- **After a set number of questions** — 1–30
+- **After a time limit** — 1–120 minutes
+- **When Double has covered everything**
+
+**During the session** (role play):
+
+- **Give feedback at the end**
+- **Allow pause and resume**
+- **Allow restart**
+- **Allow repeating a question**
+
+**Also start when someone says** — optional exact phrases, for a guaranteed start. For example, `practise for my interview`.
+
+**Conversational pacing** — how often Double may suggest the skill:
+
+- **Cooldown turns** — how many turns to wait before suggesting it again
+- **Max suggested attempts** — how many times it can promote the skill in a session
+- **Drop or defer immediately if visitor expresses hesitation or pushback**
+
+### Connections
+
+Shows the tools the skill uses and the channels where the assigned Double is live. If no channel is listed, assign a Double first.
+
+## Preview and refine
+
+The right panel shows an **Example opening** — how the skill might start in chat, plus its difficulty, length, feedback, and files.
+
+The example is generated from your settings, not a live AI response. Use **Test** after saving to try the real thing.
+
+At the bottom of Setup, the **Refine** bar lets you describe a change:
+
+> Tell Double what to change, like "make it harder, 8 questions"
+
+Assist updates the matching settings and highlights what changed. You can also refine by describing the change in Assist.
+
+## Save and assign
+
+- **Create skill** opens **Review what will be created**, where you can check the kind, name, purpose, role, length, and responses before confirming.
+- **Save changes** updates an existing skill.
+- **Save preview** stores a custom skill as a preview.
+
+Validation messages appear above the form:
+
+- "Give the skill a name."
+- "Choose a Double for this skill."
+- "Describe when Double should use this skill."
+- "Say who your Double plays."
+- "Add at least one question."
+- "Keep custom persona directions under 500 characters."
+
+## Manage skills in the list
+
+**Your skills** lists everything with **Name**, **Type**, **Assigned**, **Updated**, and **Status**.
+
+- Search with **Find anything**, or filter by type or Double.
+- **Pause** stops a skill running without deleting it; **Activate** turns it back on.
+- **Edit details** reopens the editor.
+- **Assign to** changes which Doubles have the skill.
+- **Remove from this Double** unassigns it but keeps it in your library.
+- **Delete** removes it from every Double permanently.
+
+## What to know
+
+- A skill must be **Active** and assigned to a Double before it can run.
+- Pausing keeps the configuration but stops the skill from triggering.
+- Skills can be reused across Doubles; per-Double pages only show that Double's skills.
+- Exact start phrases are the most reliable trigger; the plain-language fields guide Double's judgment.
+- A skill that needs a connected tool, a deck, or shareable files shows as needing setup until that piece is ready.
+
+## FAQ
+
+**Why won't my skill run?** Check its status, that it is assigned to the Double, and that any tools or files it needs are ready.
+
+**Should I use a template or start from scratch?** Templates are faster and fully editable. Start from scratch if you already know the scenario or questions.
+
+**Can I change the kind after creating it?** No. Create a new skill with the right starting point.
+
+**Can two Doubles share one skill?** Yes. Use **Assign to** from the global Skills page.
+
+**Does deleting remove it from every Double?** Yes. **Remove from this Double** only unassigns it.
+
+**Next steps:**
+
+- Role Play Skills
+- Interview Skills
+- Results and Testing

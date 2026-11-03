@@ -1,0 +1,137 @@
+---
+title: "Routines"
+---
+
+Routines are jobs Assist runs for you on a schedule or when something happens — for example, *"every Friday, email me the top questions"* or *"when a new lead arrives, qualify them."*
+
+You create them by describing them in chat. There is no routine form; Assist sets it up and asks before it goes live.
+
+**Where to find it:** **Assist → Routines** (`/app/assist/routines`), or the **Routines** tab in the Assist panel.
+
+## Create a routine
+
+1. Open **Routines**.
+2. Click **New routine** (or **Describe a routine** if you have none yet).
+3. Assist opens with the composer pre-filled: `Set up a routine that `.
+4. Finish the sentence — what should happen, who it is for, and when.
+5. Send it. Assist builds the routine and asks for confirmation before it starts running.
+
+**New routine** does not send anything on its own; it only puts the opening words in the composer.
+
+### What a routine contains
+
+| Part | What it means |
+| --- | --- |
+| **When** | A schedule, a one-time time, or an event such as a new email or a captured lead |
+| **Do** | The instructions Assist follows |
+| **Then** | Optional follow-ups, such as a reminder or a message |
+| **Double** | The Double the routine works through |
+| **Tools** | The apps and actions it may use |
+
+Assist supports scheduled, one-time, event, app, and webhook triggers. The routine detail shows the trigger; only the schedule can be edited from the page.
+
+## The Routines list
+
+Use the filters to narrow the list:
+
+- **All**
+- **Needs attention**
+- **Automations**
+- **Scheduled**
+- **One-time**
+
+Each filter shows a count. **Search routines** matches the name, Double, status, and tool names.
+
+| Column | What it shows |
+| --- | --- |
+| **Name** | The routine, with its kind: **Automation**, **Scheduled task**, or **One-time task** |
+| **Doubles & resources** | The Double and tools it uses |
+| **Runs** | How often it runs |
+| **Last run** | When it last ran, or **Never** |
+| **Next run** | When it runs next, **Paused**, or **—** |
+| **Status** | **Active**, **Paused**, **Completed**, or **Needs attention** |
+
+A blue dot labelled **New run result** means there is a fresh result to read. The row action is **Fix in chat** when the routine needs you, and **Open in chat** otherwise.
+
+## Open a routine
+
+Click a row to open its detail panel. It shows:
+
+- The latest result and a link to any artifact it produced.
+- **Open chat** and **Change in chat** — both prefill the composer so you can adjust it by describing the change.
+- A plain-language **when / do / then** summary.
+- **Trigger**, **Filters**, **Double**, **Last run**, and **Next run**.
+- **How this works** — the prompt, the skill used, and the tools it needs.
+- **Steps** — the ordered actions, with tags such as `writes` or `sends`.
+- **Recent runs** — the last few results, marked **Ran** or **Failed**.
+- **Action permissions**, **Follow-ups**, and **Memory**.
+
+### Edit the prompt or schedule
+
+Click **Edit prompt and schedule** (or the pencil) to open the editor:
+
+- **Prompt** — what the routine should do.
+- **Repeat** — **Hourly**, **Daily**, **Weekly**, or **Monthly**.
+- **Every** — 1 hour, 1 day, 1 week, or 1 month.
+- **End repeat** — **Never** or **On date**.
+- **Time** — the time of day, unless the routine is hourly.
+- **Day** — the weekday, for weekly routines.
+- **End date** — when **On date** is selected.
+
+Click **Save**. The page confirms **"Routine updated."**
+
+To change how a routine starts (for example, an event trigger), describe the change in chat.
+
+### Pause, run, or delete
+
+- **Pause** stops future runs; **Turn on** resumes them.
+- **Run now** queues an immediate run. The result appears in **Activity**.
+- **Delete routine** asks **"Delete this routine?"** and removes its schedule, memory, and follow-ups. Past runs stay in Activity.
+
+**Run now** is unavailable while the routine needs attention, is already running, or has another blocking reason. The page tells you why.
+
+## Permissions, memory, and follow-ups
+
+### Action permissions
+
+Some routines can make changes without asking. For each action you can choose:
+
+- **Ask first** — the routine waits for your approval.
+- **Allow without asking** — the routine can act on its own within limits.
+
+Limits are shown per action: at most **1 allowed action per run**, **5 per day**, and at least **60 seconds apart**.
+
+### Memory
+
+Routines can remember useful context between runs — for example, who was already emailed. Memory is capped at five entries in the panel; use **Show all** to see them, **Forget** an entry, or **Forget everything**.
+
+### Follow-ups
+
+A routine can schedule a follow-up with an instruction and a time. The detail panel shows the follow-up or **Not scheduled**, and lets you cancel it.
+
+### Google Chat replies
+
+If a routine uses Google Chat, the panel shows whether replies are enabled. Click **Enable Google Chat reply** if it is off; sending still asks first.
+
+## What to know
+
+- Routines run across your workspace and can be scoped to one Double.
+- Creating and changing triggers happens in chat; the page edits the prompt and schedule.
+- A routine that needs you stays paused until the issue is fixed.
+- If your monthly response limit is reached, a run is skipped with **"Skipped: the monthly response limit is reached."**
+- Assist shows routine updates in-app only.
+
+## Troubleshooting
+
+**My routine didn't run.** Check its status — **Paused** and **Needs attention** routines do not run. Open it and use **Fix in chat** if it needs attention.
+
+**Run now is greyed out.** The routine is already running, needs attention, or has a blocking reason shown under the buttons.
+
+**I need a different schedule.** Use **Edit prompt and schedule**. For event or app triggers, ask Assist in chat.
+
+**I deleted a routine — can I get it back?** No. Deleting removes the routine, its schedule, memory, and follow-ups. Its past runs remain in Activity.
+
+**Next steps:**
+
+- Needs You and Activity
+- Assist Overview

@@ -1,0 +1,142 @@
+---
+title: "Tools Overview"
+---
+
+**Tools** are the apps your Double can act in — Gmail, Google Calendar, Google Sheets, Salesforce, Zoho CRM, Shopify, and any MCP server you connect. You connect an app once for your workspace, then decide which Doubles may use it and what it is allowed to do.
+
+**Where to find it:** **Library → Tools** for your whole workspace, or open a Double → **Configure → Tools** for that Double.
+
+## How Tools work
+
+- **A tool** is an app, such as Gmail.
+- **An account** is a specific login for that tool. You can connect several accounts to one tool.
+- **An action** is one thing the Double can do, such as *Send email* or *Create event*.
+- **A permission** decides who can trigger an action and whether it needs your approval.
+
+Tools are connected once for the workspace. Each Double still needs access switched on before it can use them.
+
+## Connect a tool
+
+1. Open **Library → Tools**.
+2. Find the app under **Available tools**.
+3. Click **Connect**.
+4. Sign in to the provider and approve access.
+5. Choose which Doubles may use it.
+
+Once connected, the app moves to **Connected tools**.
+
+The page is split into:
+
+| Section | What it shows |
+| --- | --- |
+| **Connected tools** | Apps with at least one connected account |
+| **Available tools** | Apps you can connect, with category filters |
+| **MCP servers** | Remote MCP servers you have added |
+
+Use the **All**, **Productivity**, **CRM**, and **Communication** filters to narrow the catalog. **Request New Tools** lets you ask for an app that isn't listed.
+
+## The tool catalog
+
+| Tool | What it does | Notes |
+| --- | --- | --- |
+| **Gmail** | Send, read, and manage email | Read, write, and destructive actions |
+| **Google Calendar** | Check availability and manage meetings | Read, write, and destructive actions |
+| **Google Sheets** | Read and update spreadsheet data | Spreadsheet access can be limited |
+| **Shopify** | Read products, collections, and inventory | Read-only |
+| **Salesforce** | Manage leads, opportunities, and accounts | Approved action set |
+| **Zoho CRM** | Manage leads, contacts, and deals | Read, write, and destructive actions |
+| **HubSpot** | Find leads and update contacts | Coming soon |
+| **Google Chat** | Read spaces and post messages | Coming soon |
+
+## Give a Double access
+
+### From the global Tools page
+
+Each connected tool card shows who can use it:
+
+- **All Doubles**
+- **No Doubles**
+- A specific Double name
+- **N Doubles**
+
+Open the tool's **Manage** drawer and use **Available to** to choose Doubles. Saving applies to every action in that tool.
+
+### From a Double's Tools page
+
+Open **Double → Configure → Tools**. Each app has a **Use with** switch labelled with the Double's name. Turn it on to let that Double use the app.
+
+If a Double has no access, the card is dimmed and the Double cannot run any action from that tool.
+
+## Accounts
+
+Open **Manage** on a connected tool to see its accounts.
+
+- **Add account** connects another login — for example, a second Gmail mailbox.
+- **Rename** gives an account a clear label.
+- **Make default** sets the account your Double uses when a request doesn't name one.
+- You can connect up to **5 accounts per app**.
+
+**Action permissions are shared across accounts.** If you allow *Send email*, it applies to every connected account for that tool.
+
+**Note:** Your rules are enforced by Double whenever a tool action runs. The connected app still applies its own permissions on top.
+
+## MCP servers
+
+MCP (Model Context Protocol) servers let you connect tools that aren't in the built-in catalog.
+
+1. Open the **MCP servers** section.
+2. Click to add a server and enter its **Server URL**.
+3. Choose the authentication method — **Sign-in**, **Bearer token**, or **API key**.
+4. Save.
+
+New MCP tools ask you before running until you review them. In the server's settings you can choose:
+
+| Review option | What it means |
+| --- | --- |
+| **Not reviewed: ask first** | The default — every call needs approval |
+| **Only reads: run freely** | Read-only tools run without asking |
+| **Changes things: always ask** | Write actions always ask |
+| **Off** | The server is disabled |
+
+## Spreadsheet access (Google Sheets)
+
+For Google Sheets, choose how much your Double can reach:
+
+- **Selected spreadsheets only** — only spreadsheets you explicitly add to the allowlist.
+- **All spreadsheets** — any spreadsheet your connected Google account can open.
+
+**All spreadsheets** mode shows a warning. Use **Selected spreadsheets only** if you want tight control.
+
+## Connections
+
+The bottom of the Manage drawer shows what uses the tool:
+
+- **Skills** that reference it
+- **Routines** that use it — **Create in Assist**
+- **Channels** (per-Double view only)
+
+## What to know
+
+- Connecting a tool does not automatically let every Double use it.
+- A disconnected or expired account cannot run actions; reconnect it from **Manage accounts**.
+- If an action is not permitted, the Double cannot run it even if the tool is connected.
+- Destructive actions such as deleting email or cancelling events are locked by default.
+- Some tools need extra permissions. If a connection is missing one, Double asks you to disconnect and connect again.
+- Tools are separate from Skills: a skill describes *what* to do, a tool provides the *ability* to do it.
+
+## Troubleshooting
+
+**My tool shows "Reconnect needed".** Open **Manage accounts** and sign in again.
+
+**A Double can't use a tool.** Check both the tool's **Available to** list and the **Use with** switch on the Double's Tools page.
+
+**An action is missing.** Some apps expose only approved actions. Check the action list in the tool's permission panel.
+
+**I can't add another account.** Each app is limited to five accounts.
+
+**My spreadsheet isn't visible.** Switch to **Selected spreadsheets only** and add it to the allowlist, or use **All spreadsheets**.
+
+**Next steps:**
+
+- Action Permissions
+- Skills Overview
