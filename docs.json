@@ -53,13 +53,19 @@
               "knowledge-base-and-training-overview",
               "Knowledge-base-and-training/global-knowledge-base",
               "Knowledge-base-and-training/managing-knowledge-sources",
+              "Knowledge-base-and-training/uploading-documents-and-images",
               "Knowledge-base-and-training/adding-custom-text",
               "Knowledge-base-and-training/adding-websites",
+              "Knowledge-base-and-training/connecting-google-drive",
               "Knowledge-base-and-training/connecting-x-or-twitter",
               "Knowledge-base-and-training/connecting-linkedin",
               "Knowledge-base-and-training/connecting-youtube",
+              "Knowledge-base-and-training/connecting-instagram",
+              "Knowledge-base-and-training/connecting-tiktok",
+              "Knowledge-base-and-training/connecting-substack",
               "Knowledge-base-and-training/context-instructions",
               "Knowledge-base-and-training/does-social-media-auto-update",
+              "Knowledge-base-and-training/sharing-files-with-visitors",
               "Knowledge-base-and-training/file-size-and-storage-limits",
               "Knowledge-base-and-training/conflicting-information"
             ]
@@ -69,6 +75,7 @@
             "pages": [
               "voice/voice-overview",
               "voice/cloning-your-voice",
+              "voice/designing-a-voice",
               "voice/choosing-a-preset-voice",
               "voice/supported-audio-formats",
               "voice/voce-quality-and-troubleshooting",
@@ -134,7 +141,50 @@
           {
             "group": "Channels",
             "pages": [
-              "gmail-drafts"
+              "gmail-drafts",
+              "channels/google-chat-and-whatsapp-overview",
+              {
+                "group": "Google Meet",
+                "pages": [
+                  "google-meet/google-meet-overview",
+                  "google-meet/joining-a-meeting",
+                  "google-meet/calendar-join",
+                  "google-meet/meeting-settings",
+                  "google-meet/presenting-and-sharing-files",
+                  "google-meet/after-the-meeting",
+                  "google-meet/troubleshooting"
+                ]
+              },
+              {
+                "group": "Google Chat",
+                "pages": [
+                  "channels/google-chat/connecting-google-chat",
+                  "channels/google-chat/replying-in-google-chat",
+                  "channels/google-chat/automatic-replies",
+                  "channels/google-chat/sending-files",
+                  "channels/google-chat/managing-conversations"
+                ]
+              },
+              {
+                "group": "WhatsApp",
+                "pages": [
+                  "channels/whatsapp/connecting-whatsapp-business",
+                  "channels/whatsapp/replying-on-whatsapp",
+                  "channels/whatsapp/the-24-hour-window",
+                  "channels/whatsapp/message-templates"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Lead Capture",
+            "pages": [
+              "lead-capture/lead-capture-overview",
+              "lead-capture/anonymous-threshold",
+              "lead-capture/capture-methods",
+              "lead-capture/contacts",
+              "lead-capture/importing-contacts",
+              "lead-capture/troubleshooting"
             ]
           },
           {

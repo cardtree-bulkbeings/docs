@@ -2,47 +2,42 @@
 title: "Adding Websites"
 ---
 
-Connect a website, blog, or public pages so the AI Double can answer questions using site content. The AI extracts visible text from the pages added.
+Import pages from your website, blog, or docs to train the AI Double.
 
-## **How to add websites**
+## **How to add a website**
 
-1. Open **Knowledge** (find it in the sidebar under **Configure** Or on your Double in homepage)
-2. Click **Website URL** in Data Sources section
-3. Choose **Single Page** or **Multiple Pages**
-4. Paste the website URL
-5. Click **Crawl website and train**
+1. Open **Knowledge** and click **Website URL**
+2. Choose an import mode
+3. Paste your URL, sitemap, or list of URLs
+4. Review the discovered pages and select which ones to add
+5. Start the import
 
-Websites appear in the **Links** section on the same page.
+## **Import modes**
+
+| **Mode** | **What it does** |
+| --- | --- |
+| **Single URL** | Adds only the page you provide |
+| **Whole Website** | Follows internal links, up to the max URL limit you set (at most 10,000). You can also add a URL pattern to filter pages |
+| **Sitemap** | Reads sitemap XML, sitemap indexes, and robots.txt. You can filter by URL pattern |
+| **CSV Import** | Paste URLs (one per line or comma-separated), or upload a CSV with URLs in any column. Only these exact URLs are imported |
 
 ## **What to know**
 
-- **Single Page** - Adds one specific page
-- **Multiple Pages** - Crawls entire site or multiple pages
-- **Only visible text is imported** - Images and hidden content aren't captured
-- **Previously crawled pages are excluded** - Prevents duplicate content
-- **Paid articles not supported** - Content behind paywalls won't work
-- **Social profiles not supported** - Use social media connectors instead
+- Only the visible text on each page is imported. Images and hidden content aren't captured
+- Duplicate URLs and previously crawled pages are excluded automatically
+- Paid articles aren't supported
+- Social media profiles aren't supported here. Use the social sources instead
+- To update a website, delete the source and add the updated URL
 
-## **Best practices**
+## **Best for**
 
-Add websites that contain:
-
-- Services or product pages
-- About page and team information
-- Blog posts or articles
-- Support documentation
-- Case studies or testimonials
-
-Use a **Single Page** for specific content. Use **Multiple Pages** to import the entire site at once.
-
-## **Managing websites**
-
-To delete a website, click the trash icon next to the URL in the **Links** section.
+- Services and product pages
+- About and team pages
+- Blog posts
+- Support docs
+- Case studies and testimonials
 
 **Next steps:**
 
-- Adding Websites
-- Connecting X/Twitter
+- Connecting Google Drive
 - Connecting LinkedIn
-- Connecting YouTube
-- Context Instructions
