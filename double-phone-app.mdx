@@ -2,130 +2,242 @@
 title: "Double Phone App"
 ---
 
-Your AI agent answers, screens, forwards, or blocks incoming calls for you — speaking in your own voice and following rules you define.
+Your AI agent answers the calls you miss, screens unknown callers, follows rules you define, and can place calls on your behalf — speaking in your own voice.
+
+Double Phone works on **+91 (Indian) numbers only**. You can set it up in the **Double Phone app** (Android and iPhone) or in the web app under **Channels → Phone**.
 
 ## App structure at a glance
 
 | Tab | What you find there |
 | --- | --- |
 | **Home** | Agent status (Active/Paused) · items needing your approval · recent calls |
-| **Calls** | Filterable call list · call details · caller details · corrections for your Double |
-| **Rules** | Answer / Forward / Block / Silence rules · custom rule builder · known contacts, work hours, addresses |
-| **You** | Voice setup · notifications · usage & plans · troubleshooting · help · log out |
+| **Calls** | Filterable call list · search · call detail and transcript · caller details · corrections |
+| **Rules** | Answer / Forward / Block / Silence rules · custom rule builder · known contacts · work hours · addresses |
+| **You** | Voice setup · notifications · usage and plans · troubleshooting · help · log out |
 
-During a live call, a mini call bar and a full-screen call view are available from any tab.
+During a live call, a mini call bar and a full-screen call view are available from any tab. In the web app, the same call list and settings live under **Channels → Phone**.
 
-Call outcomes you will see across the app: **Answered · Forwarded · Blocked · Silenced · Bypassed** (a known contact called, so your Double did not pick up) **· Approval needed**.
+Call outcomes you will see: **Answered · Forwarded · Blocked · Silenced · Known contact (bypassed) · Not answered · Approval needed**.
 
 ## 1. Getting started
 
 ### Sign in
 
-Open the app and sign in with **LinkedIn**, **Google**, or **email + password** (email and password are both required). A successful sign-in takes you to Home.
+- **In the app:** continue with **Google** or **Apple**, or sign in with your email and password.
+- **On the web:** continue with **LinkedIn** or **Google**, or use email and password (both required).
+
+A successful sign-in takes you to Home.
 
 ### Verify your phone number
 
-Enter your mobile number and tap **Send code**. Type the 6-digit code from the SMS — the boxes advance automatically as you type, and you can paste the whole code at once. Use **Resend code** if it does not arrive, or **Change number** to fix a typo.
+Enter your 10-digit Indian mobile number and request a code. Type the **6-digit code** from the SMS — the boxes advance as you type, and you can paste the whole code at once.
 
-### Tell Double your name
-
-Enter your first and last name (at least one is required). Your Double uses these to introduce you on calls.
+- **Resend / Send a new code** if it does not arrive.
+- **Change number** to fix a typo.
+- The number must be a 10-digit Indian mobile; `+91` is added for you.
 
 ### Set up your voice
 
 Choose how your Double should sound:
 
 - **Clone a new voice** — record a short sample, then pick a tone: **Warm**, **Friendly**, or **Formal**.
-- **Use my Double voice** — reuses the voice from your existing Double account. During sign-up this option is locked until you log in to that account; logging in pulls in your saved voice, tone, and account knowledge.
+- **Use my Double voice** — reuses the voice from your existing Double account. During sign-up this stays locked until you sign in to that account; signing in pulls in your saved voice, tone and account knowledge.
 
-Then pick at least one **spoken language** (you can select several, e.g. English + Hindi) and tap **Continue**.
+Then pick at least one **spoken language** (for example English and Hindi) and tap **Continue**.
 
 ### You're all set
 
 Review your tone and language chips. Keep **Call & message alerts** and **Sync my contacts** on for the full experience, then tap **Start using Double** to reach Home.
 
-## 2. Home
+## 2. Connect and control your line
 
-Home shows a greeting, your Double's status card, anything waiting on you, and recent calls.
+Open **Channels → Phone → Settings** in the web app, or the matching screen in the app.
 
-- **Status card** — shows today's counts (calls today, handled by Double, forwarded). The **Active/Paused** switch controls the agent: when paused, your Double stops picking up and every call rings straight through to you.
-- **Attention cards** — items needing a decision, e.g. approving a meeting change or sharing your home address. **Approve** or **Deny** resolves the card on the spot.
-- **Recent calls** — each row shows the caller, time, duration, and an outcome badge. Tap any card or row for full details.
+### Connect your number
 
-## 3. Live calls
+1. Enter **Your mobile number** (`+91`, 10 digits).
+2. Tap **Connect number**. If the number needs confirming, a 6-digit code is texted to it.
+3. Enter the code and tap **Confirm and connect**.
 
-When a call comes in, your Double picks up and starts screening. A **mini bar** appears above the tab bar ("Double is picking up", then the caller's name with a live timer) — the rest of the app stays usable while it runs. Tap **View call** for the full-screen view.
+When the line is connected you will see:
 
-### Full-screen call view
+| Field | Meaning |
+| --- | --- |
+| **Your number** | The mobile you connected |
+| **Double Phone number** | The number your Double answers on |
+| **Status** | **Answering** or **Paused** |
 
-Shows a LIVE badge, timer, the caller's intent, and a **live transcript** that grows as the conversation happens. Some lines carry a rule tag (e.g. "Rule: changes need approval").
+### Turn forwarding on from your phone
 
-- **Take over** — joins you to the call ("Connecting…" first, then "You're on the call — Double stepped back"). The actions become **Hand back to Double** and **End call**.
-- **Chevron** — minimises back to the mini bar.
-- **End call** — ends the call.
+Your carrier still has to send calls to your Double. Dial these codes from the phone that owns the number, then press call:
+
+| Situation | Code |
+| --- | --- |
+| When you don't answer | `**61*<Double Phone number>#` |
+| When you're busy | `**67*<Double Phone number>#` |
+| When your phone is off | `**62*<Double Phone number>#` |
+| Turn forwarding off | `##004#` |
+
+### Pause, resume, log out
+
+- **Pause** stops your Double answering. Calls are **not** redirected to you while carrier forwarding is on — to get them back, turn forwarding off with `##004#`, then pause from the app or web.
+- **Resume** starts answering again on the same number.
+- **Log out** removes this Double's line from your account. It does **not** change the forwarding set on your phone, so dial `##004#` to stop calls going to the old number. You can reconnect the same number later.
+
+## 3. Calls
+
+### Call list
+
+Filter with **All, Incoming, Outgoing, Missed**, and search by name, number, purpose or anything said in the transcript. Each row shows the caller, time, a preview line and a badge for live or urgent calls.
+
+### What each outcome means
+
+| Outcome | What happened |
+| --- | --- |
+| **Answered** | Your Double picked up and handled the call |
+| **Forwarded** | The call rang through to you |
+| **Blocked** | Your Double declined it |
+| **Spam** | Declined automatically as spam or telemarketing |
+| **Known contact** | A saved contact called, so your Double did not answer (also labelled _bypassed_) |
+| **Unknown in work hours** | Not answered because of your work-hours setting |
+| **Not answered** | It rang out |
+| **Forwarding failed** | The call was forwarded but your Double could not pick up |
+| **Not enough credits** | The call was refused; add credits in Billing |
+| **Billing unavailable** | Phone billing was temporarily down; try again |
+
+### Live call view
+
+While a call is live you see a **LIVE** badge, a running timer, the caller's purpose, and a transcript that grows as the call happens.
+
+- **Take over** — joins you to the call. After "Connecting…" the buttons become **Hand back to Double** and **End call**.
+- **Chevron** — minimises to the mini bar; the rest of the app stays usable.
+- **End call** — ends the call. In Assist, the same **Take over** and **End call** controls appear on the live call card.
 
 ### After the call
 
-If the call needed something from you, a **summary card** appears with the outcome (e.g. "Meeting change requested") and actions such as **Approve change** or **Suggest another**. Approving confirms in place ("Approved · meeting moved to 4 PM"). Calls needing nothing show **Done**. Closing the view returns to Home, with resolved items removed.
-
-## 4. Calls & approvals
-
-### Calls list
-
-Filter with the pills: **All, Approvals, Answered, Forwarded, Blocked, Silenced**. Each row shows caller, time, duration, a preview line, and an outcome badge.
+Calls that needed something from you show a summary card with the outcome and actions such as **Approve change** or **Suggest another**. Approving confirms in place. Calls that needed nothing show **Done**.
 
 ### Call detail
 
-- **Needs approval** — shows what happened, an approval card (**Approve / Suggest another**), and the two-sided transcript (Double vs Caller). Approving turns the card green with a confirmation.
-- **Answered calls** — read-only detail. Lines that used stored knowledge carry a tag like "Used: Home address" so you can see what informed the reply.
-- **⋯ menu** — opens **Caller details**.
-- **Call back** and **Save contact** are available from the detail view.
-- **Correct or improve this answer** — opens an editor prefilled from the call so you can feed a correction back to your Double.
+- Two-sided transcript (Double vs caller), with tags such as "Used: Home address" showing what informed a reply.
+- **Call back** places an outbound call to the same number.
+- **Correct or improve this answer** opens an editor prefilled from the call so you can teach your Double.
+- **Caller details** shows call history, a **Block** toggle and **Add to contact**.
 
-### Caller details
+## 4. Place a call
 
-Shows the caller header, call history, a **Block** toggle, and **Add to contacts**. Note: a contact-name match is not proof of identity — your Double treats callers by phone number. Turning Block ON labels the number "Blocked on Phone" and adds it to Blocked contacts.
+Open **Calls → Call**, or use **Call back** on an existing call.
 
-## 5. Rules & call handling
+1. Pick a contact or type a number. Indian mobile or landline, 10 digits — `+91` is added for you.
+2. Say **why** your Double is calling, in up to **120 characters**. This is the purpose it sticks to.
+3. Press **Call now**. A **5-second countdown** starts; press **Cancel call** to stop it.
+4. The call appears in the list as **Calling…**, then goes live when the other side picks up.
 
-The **Rules** tab groups everything by action:
+Your Double introduces itself as calling on your behalf, never shares OTPs or bank details, and ends the call once the purpose is done. The app allows **up to 20 outbound calls a day**, and the server rate-limits rapid repeat dialling.
 
-- **Answer rules** — e.g. answer unknown calls in work hours, delivery-agent handling (address shared only after approval), urgent-call notifications, and locked protections like never sharing OTPs or bank statements.
-- **Forward rules** — when calls ring straight through to you.
-- **Blocking** — spam auto-block plus your **Blocked Contacts** list (remove any entry with ×, or add one via **Block a number**, which asks for an optional name and the number).
-- **Silencing** — **Silenced Contacts** are muted quietly: not rejected, not disconnected.
-- **General setup** — **Work Hours** (e.g. Mon–Sat, 9 AM–6 PM; outside these hours your Double says you're unavailable and offers to take a message) and **Addresses** (e.g. home for directions).
-- **Known contacts** — numbers that always ring straight through; your Double never answers for them.
-- **Add a custom rule** — describe the rule in plain words in the chat builder; Double proposes a structured rule card (**When / Do**) that you can **Edit** and **Save**.
+## 5. Rules and approvals
 
-## 6. You, settings & account
+### The main switches
 
-- **Voice Setup** — shows your current voice and languages; same editor as onboarding, saving with **Save voice**. Your Double voice becomes selectable once you're logged in.
-- **Channels & Knowledge** — opens thedouble.ai for the wider product.
-- **Notifications** — a feed of events across channels (calls, chat).
-- **Usage & Plans** — your credit balance (e.g. 3,240 of 5,000 on Pro), split by calls, chat, and knowledge processing, plus the Free / Pro / Business plan list.
-- **Troubleshooting** — permission toggles (phone, notifications, contacts) and phone checks (Carrier Check, Call Forwarding Check) with status badges.
-- **Help Centre** — FAQs including how Double answers, rule priority, voice privacy, and contacting support.
-- **Log out** — asks for confirmation first. Signing out clears the session on this device only; your Double keeps screening calls in the background.
+| Setting | What it does |
+| --- | --- |
+| **Block spam calls** | Declines calls that look like spam or telemarketing |
+| **Let saved contacts ring through** | Known contacts ring you instead of your Double |
+| **Answer unknown callers in work hours** | Off means unknown numbers are left unanswered during work hours |
+| **Alert me about urgent calls** | Flags urgent calls so you can take over |
 
-## 7. More screens
+Changes save immediately. If the phone service refuses a change, the switch flips back and an error appears.
 
-- **Channels** — every place people can reach your Double. Active: Double Chat, Website, Card, Phone. Coming soon: WhatsApp, Instagram, LinkedIn, Email.
-- **Shared knowledge** — add sources (upload documents, text, images) and browse your searchable knowledge base.
-- **Phone & call handling** — health status, a test call, notification preview, and a setup summary (managed number, routing, status, voice, languages, schedule, blocked numbers, privacy) plus a do-not-share rule.
-- **Notification settings** — toggles for call-start alerts, needs-attention alerts, call summaries, and caller details on the lock screen (off by default for privacy).
-- **Call analytics** — weekly totals (e.g. 34 calls, 88% handled without you) split by outcome: answered, forwarded, declined as spam.
+### Work hours and time zone
+
+Work hours use your account time zone (default **Asia/Kolkata**). Outside them your Double says you are unavailable and offers to take a message.
+
+### Addresses
+
+Save up to **10 addresses** (for example home, for directions). An address is shared only when a live call asks for it and you **approve** it — a delivery agent asking for your home address triggers a share/decline card.
+
+### Known, blocked and silenced numbers
+
+- **Known contacts** always ring straight through; your Double never answers for them.
+- **Blocked contacts** are declined. Add a number from caller details, or from the blocked list with an optional name.
+- **Silenced contacts** are muted quietly — not rejected, not disconnected.
+
+### Custom rules
+
+Describe the rule in plain words in the rule builder ("If a delivery agent calls, take the details and ask me before sharing the gate code"). Double proposes a structured **When / Do** card you can **Edit** and **Save**.
+
+- Up to **1,000 characters** per description.
+- Drafting is rate-limited to about **10 rules a minute**.
+- Drafting uses Double AI Credits, like other AI actions.
+
+### Approvals
+
+Some actions always need your decision: moving a meeting, sharing an address, or anything your rules mark as sensitive. The item appears on **Home** and in **Calls → Approvals**; **Approve** or **Deny** resolves it on the spot.
+
+## 6. Greetings
+
+The phone greeting is the first line callers hear. It is separate from your Double's chat greeting.
+
+- Add up to **10 greetings**; each is capped at **160 characters**.
+- `<name>` becomes the caller's name, or "there" when unknown.
+- **Static** cycles through your greetings in order; **Dynamic** varies them.
+- Leave the list empty to use your Double's own greeting.
+- Tap **Save greeting** to apply. Changes are not live until saved.
+
+## 7. Voice and languages
+
+- **Voice Setup** shows your current voice and languages; the editor is the same one used at sign-up, saved with **Save voice**.
+- **Your Double voice** becomes selectable once you are signed in to the account that owns it.
+- Cloning needs a short, clean sample and your recorded consent. You can revoke a cloned voice later.
+- Spoken languages decide what your Double can answer in; the caller can switch language mid-call.
+
+## 8. Usage and billing
+
+Double Phone calls are paid for with **Double AI Credits** — inbound and outbound calls have different per-minute rates, and the charge is recorded when the call ends.
+
+- When your balance is empty, calls are refused with **"Not enough credits. Add credits in Billing."**
+- If the billing service is briefly unavailable, the call shows **"Phone billing is temporarily unavailable. Please try again."**
+- **Usage & Plans** (in the app) and **Settings → Limits & usage** (on the web) show the balance and the spend split by calls, chat and knowledge processing.
+- The same credit wallet pays for calls, chat and knowledge processing; there is no separate phone balance.
+
+## 9. Privacy and compliance
+
+- Your Double **introduces itself as an assistant**. It does not pretend to be you.
+- Calls can be recorded and transcribed so you can read them later. Recording is disclosed on the call and in the product.
+- Recordings are never used to train models.
+- OTPs, card numbers and bank details are blocked from being shared on a call.
+- Voice cloning requires explicit consent and can be revoked.
+
+## 10. Limits at a glance
+
+| Limit | Value |
+| --- | --- |
+| Number type | Indian (+91) mobile numbers |
+| Verification code | 6 digits, sent by SMS |
+| Greetings | 10, up to 160 characters each |
+| Addresses | 10 |
+| Outbound purpose | 120 characters |
+| Outbound calls | Up to 20 a day (app copy); rapid repeat dialling is rate-limited |
+| Custom rule description | 1,000 characters |
+| Rule drafts | About 10 a minute |
+| Call charges | Double AI Credits, per minute, inbound and outbound rated separately |
 
 ## FAQ
 
-**How does my Double answer for me?** It picks up unknown calls, screens them in your voice, follows your rules, and only involves you when your input is needed (approvals) or your rules say to forward.
+**Why didn't my Double answer?** Check, in order: the line is not **Paused**; you have credits; the caller is not a known contact; **Answer unknown callers in work hours** is on; **Block spam calls** did not decline it. The call row shows the reason.
 
-**What happens when I pause the agent?** All calls ring straight through to you until you switch it back on. Nothing else changes.
+**What is the difference between pausing and logging out?** Pausing keeps the line connected and stops answering. Logging out removes the line from your account. Neither turns off carrier forwarding — dial `##004#` for that.
 
-**What does "Bypassed" mean?** The caller is one of your known contacts, so your Double deliberately did not pick up.
+**What does "Known contact" or "Bypassed" mean?** The caller is one of your known contacts, so your Double deliberately did not pick up and the call rang you instead.
 
-**How do I stop a number calling me?** Caller details → Block toggle, or Rules → Blocked Contacts → Block a number.
+**How do I stop a number calling me?** Caller details → **Block** toggle, or **Rules → Blocked contacts → Block a number**.
 
-**How do I fix a wrong answer my Double gave?** Open the call → Correct or improve this answer → submit the correction.
+**How do I fix a wrong answer?** Open the call → **Correct or improve this answer** → submit the correction.
 
-**Will logging out stop my Double?** No — it only signs out this device. Screening continues in the background.
+**Can my Double call anyone?** It is built for callbacks and follow-ups, not cold dialling: Indian numbers only, a stated purpose, a daily cap and rate limits. It will not read out OTPs or bank details.
+
+**Why did "Call now" not dial immediately?** There is a deliberate 5-second undo window. Wait for the countdown, or press **Cancel call** to stop it.
+
+**Will logging out stop my Double?** Logging out disconnects this line. If forwarding is still set on your phone, calls keep going to the Double Phone number but will not be answered — dial `##004#` to send them back to your phone.
+
+**My greeting was not used.** Save it with **Save greeting**, keep it under 160 characters, and make sure the greeting list is not empty. An empty list falls back to your Double's own greeting.
